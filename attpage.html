@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Latest Marble | Rajsamand | Rajasthan | India </title>
+<link rel="stylesheet" href="bootstrap.css" >
+<link rel="stylesheet" href="css/mstyle.css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" type="text/css"  href="css/bootstrap.css"> -->
+
+<meta charset="utf-8">
+<meta name ="author" content = "Lakshit Paliwal">
+<meta  name="keywords" content="Latest Marble , Marble in Rajsamand">
+<meta  name="discription" content="This is a Commercial Website">
+<!--<meta http-equiv="refresh" content ="2">-->
+</head>
+
+<nav class=".col-1">
+
+<ul class="  navul">
+  <li class="navli"><a class="nava" href="homepage.html">Home</a></li>&nbsp;|&nbsp;
+  <li class="navli"><a class="nava" href="">News</a></li>
+  <li class="navli"><a class="nava" href="#contactdiv">Contact</a></li>
+  <li class="navli"><a class="nava" href="">Products</a></li>
+  <li class="navli"><a class="navactiveemp nava" href="emppage.html">Employee details</a></li>
+  <li class="navli"><a class="nava" href="feedback.html">Feedback</a></li></ul>
+</nav>
+
+<body >
+<div class="row">
+<section><div class="attpagebody"></div>
+</div>
+</section>
+
+
+
+
+<!-- <div class="empb2">
+	<button class="query2">Query Box</button>
+</div>
+ -->
+
+<script type="text/javascript">
+	function submit1()
+{
+	if(document.getElementById('a').value=="")
+	{
+		alert('please select date');
+		document.getElementId('a').focus();
+		return false;
+	}
+
+	if(document.getElementById('b').value=="")
+	{
+		alert('please select shift');
+		document.getElementId('b').focus();
+		return false;
+	}
+	if(document.getElementById('c').value=="")
+	{
+		alert('please enter your industrial place');
+		document.getElementById('c').focus();
+		return false;
+	}
+	if(document.getElementById('d').value=="")
+	{
+		alert('please enter time ');
+		document.getElementById('d').focus();
+		return false;
+	}
+	if(document.getElementById('e').value=="")
+	{
+		alert('please mark your attendance');
+		document.getElementById('e').focus();
+		return false;
+	}
+}
+</script>
+
+</head>
+<body>
+<form  action="/attendance" method="POST" class="attform feedfont" >
+	<table  class="table1 " >
+		<tbody>
+	<th>Mark Your Attendance</th>
+	
+<tr>
+ 
+ <tr>
+<td>Date</td>
+<td><input type="date" name="date"  value="date">
+</td>
+</tr> 
+
+<tr>
+<td>Shift</td>
+<td>
+	<select name="shift">
+	 	  <option value="-1">Select</option>
+          <option value="morning">Morning</option>
+          <option value="evening">Evening</option>
+          <option value="night">Night</option>
+    </select>
+</td>
+</tr>
+
+<tr>
+<td>Industrial Place</td>
+	<td>
+		<select name="place" >
+	 	  <option value="-1">Select</option>
+          <option value="udaipur">Udaipur</option>
+          <option value="rajsamand">Rajsamand</option>
+          <option value="jaipur">Jaipur</option>
+        </select>
+</tr>
+ 
+<tr>
+<td>Timing</td>
+<td><input type="time" name="time" placeholder="hh-mm-ss"></td>
+</tr>
+<br>
+ 
+
+<tr>
+<td>Attendance</td>
+<td>
+Present<input type="radio" name="attend"  value="present" >
+Absent<input type="radio" name="attend" value="absent" >
+</td>
+</tr>
+<tr align="middle" class="buttonclass" >
+	<td>
+		<input type="reset"  name="reset" value="reset" class="b1" title="reset"></td>
+		<td><input  type="submit" name="submit" value="submit form"  class="b1" title="submit from" >
+	</td>	
+</tr>
+</tbody>
+</table>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Latest Marble | Rajsamand | Rajasthan | India </title>
+<link rel="stylesheet" href="bootstrap.css" >
+<link rel="stylesheet" href="css/mstyle.css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" type="text/css"  href="css/bootstrap.css"> -->
+
+<meta charset="utf-8">
+<meta name ="author" content = "Lakshit Paliwal">
+<meta  name="keywords" content="Latest Marble , Marble in Rajsamand">
+<meta  name="discription" content="This is a Commercial Website">
+<!--<meta http-equiv="refresh" content ="2">-->
+</head>
+
+<nav class=".col-1">
+
+<ul class="  navul">
+  <li class="navli"><a class="nava" href="homepage.html">Home</a></li>&nbsp;|&nbsp;
+  <li class="navli"><a class="nava" href="">News</a></li>
+  <li class="navli"><a class="nava" href="homepage.html#contactdiv">Contact</a></li>
+  <li class="navli"><a class="nava" href="">Products</a></li>
+  <li class="navli"><a class="nava" href="emppage.html">Employee details</a></li>
+  <li class="navli"><a class="navactivefeed nava" href="feedback.html">Feedback</a></li>
+
+</ul>
+</nav>
+
+<body >
+<div class="row">
+<section><div class="attpagebody"></div>
+</div>
+</section>
+
+
+
+
+<script type="text/javascript">
+	function submit1()
+{
+	if(document.getElementById('a').value=="")
+	{
+		alert('please enter name');
+		document.getElementId('a').focus();
+		return false;
+	}
+
+	if(document.getElementById('b').value=="")
+	{
+		alert('please enter email');
+		document.getElementId('b').focus();
+		return false;
+	}
+	if(document.getElementById('c').value=="")
+	{
+		alert('please enter mobile number');
+		document.getElementById('c').focus();
+		return false;
+	}
+	if(document.getElementById('d').value=="")
+	{
+		alert('please select your gender');
+		document.getElementById('d').focus();
+		return false;
+	}
+	if(document.getElementById('e').value=="")
+	{
+		alert('please enter your city');
+		document.getElementById('e').focus();
+		return false;
+	}
+	if(document.getElementById('f').value=="")
+	{
+		alert('please enter pin code');
+		document.getElementId('f').focus();
+		return false;
+	}if(document.getElementById('g').value=="")
+	{
+		alert('please enter state');
+		document.getElementId('g').focus();
+		return false;
+	}if(document.getElementById('h').value=="")
+	{
+		alert('please enter contry');
+		document.getElementId('h').focus();
+		return false;
+	}if(document.getElementById('i').value=="")
+	{
+		alert('please enter something in feedback text box');
+		document.getElementId('i').focus();
+		return false;
+	}
+}
+</script>
+
+</head>
+<body>
+<form action="/feedback" method="POST" class="attform feedfont" >
+	<table  class="table1 " >
+		<tbody>
+	<th>Feedback form</th>
+	
+<tr>
+<td>NAME</td>
+<td><input type="text" name="name" placeholder="Name" id="a" maxlength="100" /></td>
+</tr>
+
+<tr>
+<td>EMAIL ID</td>
+<td><input type="email" name="email" placeholder="Email" autocomplete="off" id="b" maxlength="100" /></td>
+</tr>
+ 
+<tr>
+<td>MOBILE NUMBER</td>
+<td>
+<input type="text" name="mobile" maxlength="10" placeholder="Mobile Number" id="c">(10 digit number)
+</td>
+</tr>
+ 
+<tr>
+<td>GENDER</td>
+<td id="d">
+Male <input type="radio" name="gender"  value="male" >
+Female <input type="radio" name="gender" value="female" >
+</td>
+</tr>
+ 
+<tr>
+<td>CITY</td>
+<td><input type="text" name="city" maxlength="30" placeholder="City" id="e">(max 30 characters a-z and A-Z)
+</td>
+</tr>
+ 
+<tr>
+<td>PIN CODE</td>
+<td><input type="text" name="pincode" maxlength="6" placeholder="Pin Code" id="f">(6 digit number)
+</td>
+</tr>
+
+<tr>
+<td>STATE</td>
+<td><input type="text" name="state" maxlength="30"  placeholder="State" id="g">(max 30 characters a-z and A-Z)
+</td>
+</tr>
+ 
+<tr>
+<td>COUNTRY</td>
+<td><input type="text" name="country"  placeholder="Country" id="h"></td>
+</tr>
+ 
+<tr>
+<td>WRITE HERE FEEDBACK <br /><br /><br /></td>
+<td><textarea name="feedbox" rows="4" cols="30" placeholder="write your feedback here..." id="i"></textarea></td>
+</tr>
+	
+<br>
+
+<tr align="middle" class="buttonclass" >
+	<td>
+		<input type="reset"  name="reset" value="reset" class="b1" title="reset"></td>
+		<td><input  onclick="submit1()"  type="submit" name="submit" value="submit form"  class="b1" title="submit from" >
+	</td>	
+</tr>
+
+</tbody>
+</table>
+</form>
+
+
+</body>
+</html>
