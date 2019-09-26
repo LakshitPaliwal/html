@@ -30,7 +30,7 @@ app.use(session({
 
 
 app.get('/',function(req,res){
-res.sendFile('homepage.html',{root:__dirname})
+res.sendFile('index.html',{root:__dirname})
 });
 app.get('/attpage',function(req,res){
 res.sendFile('attpage.html',{root:__dirname})
@@ -116,7 +116,7 @@ app.post('/attendance',function(req,res){
 //            if(results.length>0){
 //                req.session.loggedin=true;
 //                req.session.email=email;
-//                res.sendFile('homepage.html',{root:__dirname});
+//                res.sendFile('index.html',{root:__dirname});
 //            }
 //             else
 //                 {
