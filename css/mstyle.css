@@ -17,7 +17,6 @@ scroll-behavior: smooth ;
 }
 body{
   background: url('../images/bgvideo.mp4');
-  //background-image:linear-gradient(60deg,rgba(102,102,153,0.4),rgba(255,0,0,0.4),rgba(275,0,0,0.4),rgba(102,102,153,0.4) ) ;
   margin:0;
   padding: 0;
 }
